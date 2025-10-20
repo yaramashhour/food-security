@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Diseases in Jordan</title>
+  <link rel="stylesheet" href="darkmode.css">
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Container for stacked boxes */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column; /* stack vertically */
+      gap: 20px;
+      padding: 40px;
+      padding-top: 120px;
+    }
+
+    /* Individual text box */
+    .box {
+        background: #214320;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: left;
+        transition: transform 0.3s ease, background 0.3s ease;
+
+  /* NEW: center boxes and control size */
+        max-width: 800px;    /* set the maximum width */
+        margin: 0 auto;      /* center horizontally */
+        width: 100%;         /* make it responsive */
+    }
+.box h1 {
+  color: white;
+}
+
+.box h3 {
+  color: white;
+}
+
+    .box:hover {
+      transform: scale(1.02);
+      background: #0f2718,;
+    }
+    .box hr {
+  width: 80px;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.box p{
+  color: white;
+}
+    
+    .stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #0f2718, #214320, #2c6433);
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  min-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.counter {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #9edd9e;
+}
+
+    /* Footer */
+footer {
+  background:#214320;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+  </style>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar">
+      <button id="mode-toggle">🌙 Dark Mode</button>
+      <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./statistics.html">Statistics</a></li>
+          <li><a href="./irregation-system.html">Irrigation systems</a></li>
+          <li><a href="./crops.html">crops</a></li>
+          <li><a href="./plants.html">plants</a></li>
+          <li><a href="./vertical.html">Vertical farming</a></li>
+          <li><a href="./plant-diseases.html">Plant diseases</a></li>
+          <li><a href="./ai.html">Ask AI</a></li>
+          
+      </ul>
+  </nav>  
+
+  <div class="container">
+    <div class="box">
+      <h1>Plant Diseases in Jordan</h1>
+      <hr>
+      <p>Jordan’s agriculture faces numerous challenges from plant diseases that threaten crop yields and food security. These diseases are caused by fungi, bacteria, viruses, and environmental factors, affecting cereals, fruits, vegetables, and other crops across the country. Understanding these diseases helps farmers adopt preventive measures and maintain sustainable farming practices.</p>
+    </div>
+    <div class="box"><h3>Fungal Diseases</h3>
+      <hr>
+      <p> Fungal infections are among the most common plant diseases in Jordan. For example, powdery mildew affects cucumbers, tomatoes, and grapes, causing white powdery spots on leaves and reducing fruit quality. Leaf rust and downy mildew frequently affect cereals and leafy vegetables, leading to stunted growth and lower yields. Warm and humid conditions often favor the spread of these fungi.</p>
+    </div>
+    <div class="box"><h3>Bacterial Diseases</h3> 
+      <hr>
+      <p>Bacterial infections are another significant threat. Bacterial blight affects beans and other legumes, causing water-soaked lesions on leaves and pods. In fruits, bacterial canker can damage trees like citrus and stone fruits, reducing production and making plants more vulnerable to secondary infections. Strict hygiene and seed treatment are key preventive strategies.</p>
+    </div>
+    <div class="box"><h3>Viral Diseases</h3> 
+      <hr>
+      <p>Viruses can spread rapidly, often through insects like aphids or whiteflies. In Jordan, tomato yellow leaf curl virus and cucumber mosaic virus are common, causing leaf curling, yellowing, and reduced fruit production. Controlling insect vectors and using virus-resistant crop varieties are essential for management.</p>
+    </div>
+    <div class="box"><h3>Soil-Borne Diseases</h3>
+      <hr>
+      <p>Some plant diseases originate in the soil, including fusarium wilt and root rot, which affect tomatoes, peppers, and other vegetables. Poor irrigation practices and contaminated soil can worsen these infections, making crop rotation, soil sterilization, and proper drainage critical for prevention.</p>
+    </div>
+    <div class="box"><h3>Integrated Management and Future Outlook</h3> 
+      <hr>
+      <p>Jordanian farmers are increasingly adopting integrated pest and disease management practices. These include monitoring crops, using resistant varieties, applying biological controls, and improving irrigation methods to reduce disease spread. Education and research initiatives continue to strengthen the country’s ability to combat plant diseases and ensure sustainable agriculture.</p>
+    </div>
+  </div>
+<script src="homejs.js"></script>
+  <footer>
+    © 2025 Mochi Team | All Rights Reserved
+  </footer>
+</body>
+</html>

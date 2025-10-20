@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rare plants in Jordan</title>
+  <link rel="stylesheet" href="./darkmode.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      color: #16324a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 100px;
+      color: #16324a;
+    }
+
+    /* Plant block */
+    .plant {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    .plant img {
+      width: 40%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .plant img:hover {
+      transform: scale(1.03);
+    }
+
+    .plant .content {
+      padding: 20px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .plant .content h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #16324a;
+    }
+
+    .plant .content p {
+      margin: 0;
+      font-size: 15px;
+      color: #5b6b76;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .plant {
+        flex-direction: column;
+      }
+      .plant img {
+        width: 100%;
+        height: 220px;
+      }
+      .plant .content {
+        width: 100%;
+      }
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+
+            <button id="mode-toggle">🌙 Dark Mode</button>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./irregation-system.html">Irrigation systems</a></li>
+                <li><a href="crops.html">crops</a></li>
+                <li><a href="plants.html">plants</a></li>
+                <li><a href="./vertical.html">Vertical farming</a></li>
+                <li><a href="./plant-diseases.html">Plant diseases</a></li>
+                <li><a href="./ai.html">Ask AI</a></li>
+            </ul>
+        </nav>
+  <div class="container">
+    <header>
+      <h1>Available Plants in Jordan</h1>
+    </header>
+
+    <main>
+      <!-- Plant 1 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 23.55.34.jpeg" alt="Olive Tree">
+        <div class="content">
+          <h3>Olive Tree</h3>
+          <p>The olive tree is one of the most iconic and ancient trees in Jordan, deeply connected to the culture and daily life of its people. 
+		  It grows abundantly in the northern and central regions, where the climate and soil are ideal for it's cultivation. 
+		  The olive fruit is harvested every autumn and is used both for direct consumption and for producing olive oil, which is a cornerstone of Jordanian cuisine. 
+		  Olive trees are extremely common and can be found in farms, gardens, and even around villages.</p>
+        </div>
+      </div>
+
+      <!-- Plant 2 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 23.00.14 (1).jpeg" alt="Fig">
+        <div class="content">
+          <h3>Fig</h3>
+          <p>The fig is a traditional and beloved fruit in Jordan, known for its natural sweetness and rich flavor. 
+		  It ripens in the summer months, when it is eaten fresh, and it is also dried to be enjoyed throughout the year. 
+		  Figs are widely available across villages, gardens, and small farms. 
+		  They have been part of Jordanian diets for centuries, making them a familiar and very common fruit.</p>
+        </div>
+      </div>
+
+      <!-- Plant 3 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 23.00.14 (2).jpeg" alt="Almond">
+        <div class="content">
+          <h3>Almond</h3>
+          <p>The almond is a popular and nutritious nut in Jordan, appreciated for its flavor and health benefits. 
+		  Almonds are harvested in late summer, and they are often used in traditional sweets, desserts, and festive dishes. 
+		  While the almond tree is common in several regions, the nut itself is the main product recognized and consumed. 
+		  Almonds are well known throughout the country and are widely enjoyed.</p>
+        </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-26 at 23.00.13.jpeg" alt="Carob Tree">
+      <div class="content">
+      <h3>Carob Tree</h3>
+      <p>The carob tree is an evergreen tree that thrives in the Mediterranean climate of Jordan. 
+	  It's dark brown pods are used in a variety of ways: ground into powder, made into syrups, or used as a natural sweetener. 
+	  Carob has both nutritional and medicinal value, and it also serves as fodder for animals. 
+	  While not as widespread as the olive or fig, carob trees are still found in hilly and rural areas, making them a familiar though less dominant plant.</p>
+      </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-26 at 23.00.13 (1).jpeg" alt="Basil">
+      <div class="content">
+     <h3>Basil</h3>
+     <p>Basil is a fragrant herb that is widely grown in Jordanian households and gardens. 
+	 It is used in cooking to add flavor to many traditional dishes, and it also has a role in herbal medicine due to it's health properties. 
+	 Basil grows easily in pots or small garden spaces, which makes it one of the most common herbs to find around Jordanian homes. 
+	 It's pleasant aroma and versatile uses make it a staple herb in daily life.</p>
+     </div>
+     </div>
+	  
+	  
+	  
+	  <div class="plant">
+     <img src="./new.new/WhatsApp Image 2025-09-26 at 23.00.12.jpeg" alt="Mint">
+    <div class="content">
+    <h3>Mint</h3>
+    <p>The national flower of Jordan, recognized by it's dark purple petals. 
+	It grows in rocky areas and is considered endangered. Mint is perhaps the most popular herb in Jordan, famous for its refreshing aroma and taste. 
+	It is commonly used to prepare tea, a traditional drink in almost every household, and it is also added to salads and cooked dishes. 
+	Mint grows very quickly and spreads easily, which is why almost every Jordanian garden or balcony has a patch of it. 
+	Because of this, mint is considered one of the most widespread and essential herbs in Jordan.</p>
+    </div>
+    </div>
+	  
+    </main>
+    <br> <br> <br> <br> <br>
+	
+	
+	
+	
+	
+	<header>
+      <h1>Rare Plants in Jordan</h1>
+    </header>
+
+    <main>
+      <!-- Plant 1 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 22.03.32.jpeg" alt="Black Iris">
+        <div class="content">
+          <h3>Black Iris</h3>
+          <p>The Black Iris is Jordan’s national flower and a symbol of pride and uniqueness. 
+		  It grows in limited mountain regions, particularly in the central and northern highlands. 
+		  It's deep purple-black petals give it a rare and striking appearance. 
+		  The Black Iris is considered rare and is protected by conservation efforts because it's natural habitats are shrinking. 
+		  It holds not only ecological importance but also cultural and national significance in Jordan.</p>
+        </div>
+      </div>
+
+      <!-- Plant 2 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 22.04.07.jpeg" alt="White Iris">
+        <div class="content">
+          <h3>White Iris</h3>
+          <p>The White Iris is a delicate and elegant flower that is much rarer than it's black counterpart. 
+		  It grows in very restricted regions of Jordan, usually in isolated patches of land. 
+		  It's pure white petals make it distinct and remarkable, though it is not commonly seen by most people. 
+		  Because of its scarcity, the White Iris is considered rare and needs protection to ensure it does not disappear from Jordan’s natural heritage.</p>
+        </div>
+      </div>
+
+      <!-- Plant 3 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 22.04.07 (1).jpeg" alt="Petra Iris">
+        <div class="content">
+          <h3>Petra Iris</h3>
+          <p>The Petra Iris is one of the most beautiful flowers found in Jordan, characterized by it's vivid purple and violet colors. 
+		  It grows naturally around Petra and the nearby desert areas, making it closely tied to Jordan’s cultural and natural landmarks. 
+		  The flower is rare and seasonal, appearing only for a short time in spring. 
+		  It's connection to Petra makes it especially symbolic and a point of pride for Jordanian biodiversity.</p>
+        </div>
+      </div>
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-27 at 00.06.50.jpeg" alt="Rhubarb">
+      <div class="content">
+      <h3>Rhubarb</h3>
+      <p>Rhubarb is a relatively uncommon plant in Jordan, known for it's large green leaves and thick reddish stalks. 
+	  The stalks have a sour taste and are used in pies, jams, and drinks. 
+	  Although valued for both culinary and medicinal purposes, it is not widely cultivated in Jordan, which makes it stand out as a rare plant in the region. 
+	  It's unique flavor and limited availability give it a special place among Jordan’s rare plants.</p>
+      </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-26 at 22.04.06 (1).jpeg" alt="Ancient Pistacia Tree">
+      <div class="content">
+     <h3>Ancient Pistacia Tree</h3>
+     <p>The ancient Pistacia tree is a long-living species that grows in certain rural and wild areas of Jordan. 
+	 Some of these trees are centuries old, making them part of the country’s natural heritage. 
+	 They have cultural importance, as they are often linked with history, tradition, and local communities. 
+	 However, these trees are not widespread today and are considered rare due to deforestation and environmental pressures.</p>
+     </div>
+     </div>
+	  
+	  
+	  
+	  <div class="plant">
+     <img src="./new.new/WhatsApp Image 2025-09-27 at 00.06.50 (1).jpeg" alt="Orchid">
+    <div class="content">
+    <h3>Orchid</h3>
+    <p>Orchids are well-known worldwide for their beauty, but in Jordan only a few wild species can be found. 
+	They grow in mountainous meadows and fields, usually appearing in spring for a short blooming season. 
+	Because their habitats are limited and they are sensitive to environmental changes, orchids are considered rare in Jordan. 
+	Their elegant flowers make them highly admired, even though they are not commonly encountered in the wild.</p>
+    </div>
+    </div>
+	  
+	  
+	  
+	  
+    </main>
+	
+	
+	
+	
+  </div>
+  
+  
+  
+  
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="Expanded view">
+  </div>
+
+  <script>
+    document.querySelectorAll(".plant img").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox").style.display = "flex";
+      });
+    });
+
+    document.getElementById("lightbox").addEventListener("click", () => {
+      document.getElementById("lightbox").style.display = "none";
+    });
+  </script>
+
+  <script src="./homejs.js"></script>
+
+    <footer>
+      © 2025 Mochi Team | All Rights Reserved
+  </footer>
+</body>
+</html>

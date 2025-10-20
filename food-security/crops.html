@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rare plants in Jordan</title>
+  <link rel="stylesheet" href="./darkmode.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      color: #16324a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 100px;
+      color: #16324a;
+    }
+
+    /* Plant block */
+    .plant {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    .plant img {
+      width: 40%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .plant img:hover {
+      transform: scale(1.03);
+    }
+
+    .plant .content {
+      padding: 20px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .plant .content h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #16324a;
+    }
+
+    .plant .content p {
+      margin: 0;
+      font-size: 15px;
+      color: #5b6b76;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .plant {
+        flex-direction: column;
+      }
+      .plant img {
+        width: 100%;
+        height: 220px;
+      }
+      .plant .content {
+        width: 100%;
+      }
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+
+            <button id="mode-toggle">🌙 Dark Mode</button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="irregation-system.html">Irrigation systems</a></li>
+                <li><a href="crops.html">crops</a></li>
+                <li><a href="plants.html">plants</a></li>
+                <li><a href="vertical.html">Vertical farming</a></li>
+                <li><a href="plant-diseases.html">Plant diseases</a></li>
+                <li><a href="ai.html">Ask AI</a></li>
+            </ul>
+        </nav>
+  <div class="container">
+    <header>
+      <h1>Available Crops in Jordan</h1>
+    </header>
+
+    <main>
+      <!-- Plant 1 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-27 at 12.34.15.jpeg" alt="Tomato">
+        <div class="content">
+          <h3>Tomato</h3>
+          <p>The tomato is one of the most widely cultivated vegetables in Jordan, grown in open fields and greenhouses throughout the year. 
+		  It's a key ingredient in salads, sauces, and cooked dishes in Jordanian cuisine. 
+		  Tomatoes are very common, and their production is continuous to meet local demand. 
+		  The plants grow quickly, producing large yields, which makes them easily accessible in local markets.</p>
+        </div>
+      </div>
+
+      <!-- Plant 2 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-27 at 12.18.57.jpeg" alt="Cucumber">
+        <div class="content">
+          <h3>Cucumber</h3>
+          <p>The cucumber is a popular vegetable in Jordan, grown both in greenhouses and outdoor farms. 
+		  It's mainly consumed fresh in salads, pickles, and sandwiches. 
+		  Cucumbers are abundant and available almost year-round, making them a familiar and essential crop in the Jordanian diet. 
+		  Their fast growth and adaptability contribute to their widespread cultivation.</p>
+        </div>
+      </div>
+
+      <!-- Plant 3 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-27 at 12.30.13.jpeg" alt="Beans">
+        <div class="content">
+          <h3>Beans</h3>
+          <p>Beans are an important legume crop in Jordan, especially in northern regions. 
+		  They are used in traditional dishes such as stews and rice meals. 
+		  Beans are grown seasonally and are considered a common crop, though production can vary depending on rainfall and growing conditions. 
+		  Their nutritional value and versatility make them a staple in many households.</p>
+        </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-27 at 12.17.50 (1).jpeg" alt="Potato">
+      <div class="content">
+      <h3>Potato</h3>
+      <p>The potato is a widely grown crop in Jordan, particularly in the northern and central areas. 
+	  It's a staple in daily meals and are used in many traditional dishes. 
+	  Potatoes are highly versatile in cooking, and their cultivation is consistent, ensuring they remain widely available in local markets. 
+	  They are considered an essential crop for food security.</p>
+      </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-27 at 12.17.51 (2).jpeg" alt="Wheat">
+      <div class="content">
+     <h3>Wheat</h3>
+     <p>Wheat is one of the most important staple crops in Jordan, widely cultivated across the northern and central regions. 
+	 It serves as the main ingredient for bread, pastries, and other traditional foods. 
+	 Jordanian wheat varieties are well adapted to local climates, and the crop is abundant and central to the country’s agriculture. 
+	 It's cultivation supports both local consumption and economic stability in rural areas.</p>
+     </div>
+     </div>
+	  
+	  
+	  
+	  <div class="plant">
+     <img src="./new.new/WhatsApp Image 2025-09-27 at 12.17.51 (1).jpeg" alt="Barley">
+    <div class="content">
+    <h3>Barley</h3>
+    <p>Barley is a resilient cereal crop that thrives even in semi-arid conditions. 
+	In Jordan, it is grown both as a food source for humans and as animal feed. 
+	It's adaptability to poor soils and dry weather makes barley a common crop, particularly in regions where wheat may not grow as well. 
+	Barley is widely recognized and regularly harvested across many parts of the country.</p>
+    </div>
+    </div>
+	  
+    </main>
+    <br> <br> <br> <br> <br>
+	
+	
+	
+	
+	
+	<header>
+      <h1>Rare Crops in Jordan</h1>
+    </header>
+
+    <main>
+      <!-- Plant 1 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 23.55.34 (2).jpeg" alt="Saffron">
+        <div class="content">
+          <h3>Saffron</h3>
+          <p>Saffron is a highly valued spice grown only in very limited mountainous areas of Jordan. 
+		  The red stigmas of the saffron flower are harvested by hand, making the process labor-intensive and the spice rare and expensive. 
+		  Saffron is prized for it's culinary uses, vibrant color, aroma, and medicinal properties. 
+		  It's limited cultivation adds to it's rarity and uniqueness in Jordanian agriculture.</p>
+        </div>
+      </div>
+
+      <!-- Plant 2 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-26 at 22.04.05.jpeg" alt="Black Pomegranate">
+        <div class="content">
+          <h3>Black Pomegranate</h3>
+          <p>The black pomegranate is a rare and unique variety found in specific regions. 
+		  It's dark red seeds are highly flavorful and sought after for fresh consumption and traditional recipes. 
+		  This variety is not commonly grown, and it's limited availability makes it a specialty crop with cultural significance.</p>
+        </div>
+      </div>
+
+      <!-- Plant 3 -->
+      <div class="plant">
+        <img src="./new.new/WhatsApp Image 2025-09-27 at 11.29.02.jpeg" alt="Pineapple">
+        <div class="content">
+          <h3>Pineapple</h3>
+          <p>Pineapple is not a traditional Jordanian crop and is cultivated mainly in greenhouses or controlled environments. 
+		  It's tropical nature means it requires specific growing conditions, making it rare and less common in local markets. 
+		  Pineapple is mostly produced for niche consumption and is valued for it's sweet taste.</p>
+        </div>
+      </div>
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-26 at 21.02.43.jpeg" alt="Lavender">
+      <div class="content">
+      <h3>Lavender</h3>
+      <p>Lavender is an aromatic plant grown in small-scale farms primarily for it's flowers and essential oils. 
+	  While it is intentionally cultivated, it is not widespread and is considered a rare crop. 
+	  Lavender is used in perfumes, teas, culinary dishes, and as an ornamental plant, making it valuable both commercially and aesthetically.</p>
+      </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./new.new/WhatsApp Image 2025-09-27 at 11.27.52.jpeg" alt="Quinoa">
+      <div class="content">
+     <h3>Quinoa</h3>
+     <p>Quinoa is a relatively new crop in Jordan, introduced for health-focused farming and experimental cultivation. 
+	 It grows in select areas and is valued for it's high protein content and nutritional benefits. 
+	 It's cultivation is limited, which makes it rare compared to more traditional grains like wheat and barley.</p>
+     </div>
+     </div>
+	  
+	  
+	  
+	  <div class="plant">
+     <img src="./new.new/WhatsApp Image 2025-09-26 at 22.04.05 (1).jpeg" alt="Traditional/Old Wheat">
+    <div class="content">
+    <h3>Traditional/Old Wheat</h3>
+    <p>Traditional or old wheat varieties were commonly grown in Jordan before modern high-yield wheat replaced them. 
+	These varieties are now rare but are valued for their unique flavor, nutritional content, and historical importance. 
+	Farmers cultivating old wheat aim to preserve agricultural heritage, and the crop is still appreciated for special bread-making and cultural dishes.</p>
+    </div>
+    </div>
+	  
+	  
+    </main>
+	
+	
+  </div>
+  
+  
+  
+  
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="Expanded view">
+  </div>
+
+  <script>
+    document.querySelectorAll(".plant img").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox").style.display = "flex";
+      });
+    });
+
+    document.getElementById("lightbox").addEventListener("click", () => {
+      document.getElementById("lightbox").style.display = "none";
+    });
+  </script>
+
+  <script src="./homejs.js"></script>
+
+  <footer>
+      © 2025 Mochi Team | All Rights Reserved
+  </footer>
+
+</body>
+</html>

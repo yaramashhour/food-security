@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="homestyle.css" />
+        <link rel="stylesheet" href="darkmode.css" />
+        <script src ="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js" ></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+
+            <button id="mode-toggle">🌙 Dark Mode</button>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./irregation-system.html">Irrigation systems</a></li>
+                <li><a href="./crops.html">crops</a></li>
+                <li><a href="./plants.html">plants</a></li>
+                <li><a href="./vertical.html">Vertical farming</a></li>
+                <li><a href="./plant-diseases.html">Plant diseases</a></li>
+                <li><a href="./ai.html">Ask AI</a></li>
+            </ul>
+        </nav>
+        <!-- Description Video-->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="./assets/video.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay">
+                <button id="cta-button">Click Me</button>
+            </div>
+        </div>
+
+         <!-- Content Section -->
+        <div class="box-section1">
+            <h2>Overview</h2>
+            <hr class="line">
+            <p>
+            Food security is a critical challenge in Jordan, shaped by limited water resources, climate change, and population growth. Agriculture plays a vital role in ensuring national food supply, creating jobs, and supporting rural livelihoods. Despite having only a small share of arable land, Jordan has developed innovative farming practices to adapt to its harsh environment.
+            </p>
+        </div>
+
+        <section class="box-section">
+            <div class="content-box">
+                <div class="box-text1">
+                <h2>Statistics on Types of Agriculture</h2>
+                <hr class="line">
+                <p>
+                Jordan's agriculture is mostly rainfed (≈80%), with smaller areas under irrigation, greenhouse farming, and emerging vertical farming systems.
+                </p>
+                <!-- Button under paragraph -->
+                <a href="./statistics.html" class="stats-btn">Learn More</a>
+            </div>
+            <!-- bar Chart Section -->
+            <section class="chart-section">
+                <div class="box-chart">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </section>
+            <script>
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Rainfed Agricultured', 'Irrigated Agriculture', 'Greenhouse Farming', 'Pastoral Systems', 'Vertical Farming'],
+                        datasets: [{
+                        label: 'Share of Cultivated Land (%)',
+                        data: [80, 20, 10, 72, 1],
+                        backgroundColor: [
+                '#234b26', // Rainfed
+                '#234b26', // Irrigated
+                '#234b26', // Greenhouse
+                '#234b26', // Pastoral
+                '#234b26'  // Vertical
+                ],
+                borderColor: '#333',
+                        borderWidth: 1
+                    }]
+                    },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                },
+                        options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                animation: {
+                duration: 3000,        // 2 seconds
+                easing: 'easeOutBounce' // fun bounce effect
+                }
+            }
+            });
+            </script>
+        </div>
+        </div>
+        </section>
+
+        <section class="image-gallery">
+  <!-- Row 1 -->
+  <div class="gallery-row">
+    <a href="./irregation-system.html" class="gallery-item">
+      <img src="./assets/irrigation system.jpg" alt="Page 2">
+      <div class="overlay">"Discover how Jordan’s irrigation systems work and impact agriculture"</div>
+    </a>
+    <a href="./new.new/crops.html" class="gallery-item">
+      <img src="./assets/rare crops.jpg" alt="Page 3">
+      <div class="overlay">"Explore the diversity of crops in Jordan, from rare to common"</div>
+    </a>
+    <a href="./new.new/plants.html" class="gallery-item">
+      <img src="./assets/rare plants.jpg" alt="Page 4">
+      <div class="overlay">"Discover Jordan’s rare plants alongside widely cultivated ones"</div>
+    </a>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="gallery-row">
+    <a href="./vertical.html" class="gallery-item">
+      <img src="./assets/vertical farming.jpg" alt="Page 5">
+      <div class="overlay">"Explore how Jordan is adopting vertical farming to grow crops sustainably and conserve water for the future."
+    </div>
+    </a>
+    <a href="./plant-diseases.html" class="gallery-item">
+      <img src="./assets/plant disease1.jpg" alt="Page 6">
+      <div class="overlay">"Explore common plant diseases and ways to protect crops"</div>
+    </a>
+  </div>
+</section>
+
+ 
+        <div class="container">
+            <div class="box">
+                <p class="text1">Yara AlKanash</p>
+                <p class="text2">Computer Engineering</p>
+            </div>
+            <div class="box">
+                <p class="text1">Hala Albasaitah</p>
+                <p class="text2">Computer Science</p>
+            </div>
+            <div class="box">
+                <p class="text1">Dua'a Alhyari</p>
+                <p class="text2">Computer Information Systems</p>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Mochi Team | All Rights Reserved
+        </footer>
+
+        <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+        <script src="homejs.js"></script>
+    </body>
+</html>

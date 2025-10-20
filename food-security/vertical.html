@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Farming</title>
+  <link rel="stylesheet" href="darkmode.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      
+    }
+
+    .content-box {
+      max-width: 1000px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      margin-bottom: 80px;
+      padding-bottom: 50px;
+    }
+
+    .content-text {
+      flex: 1;
+      text-align: justify;
+    }
+
+    .content-text h2 {
+      color: #2b7a0b;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .content-image {
+      flex: 1;
+    }
+
+    .content-image img {
+      width: 100%;
+      border-radius: 12px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+     @media (max-width: 768px) {
+      .content-box {
+        flex-direction: column;
+      }
+    }
+    footer {
+  background:#214320;
+  text-align: center;
+  padding: 15px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+  </style>
+</head>
+<body>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <button id="mode-toggle">🌙 Dark Mode</button>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./irregation-system.html">Irrigation systems</a></li>
+                <li><a href="./crops.html">crops</a></li>
+                <li><a href="./plants.html">plants</a></li>
+                <li><a href="./vertical.html">Vertical farming</a></li>
+                <li><a href="./plant-diseases.html">Plant diseases</a></li>
+                <li><a href="./ai.html">Ask AI</a></li>
+            </ul>
+        </nav>
+
+  <div class="content-box">
+    <div class="content-text">
+      <h2>Vertical Farming Techniques</h2>
+      <p>
+        Vertical farming is a method of growing crops in vertically stacked layers, often in controlled indoor environments,
+        using techniques like hydroponics or aeroponics with artificial lighting instead of soil and sunlight.
+        This space-efficient approach allows for higher yields per square foot, year-round production, and reduced land and water use,
+        making it a technology for more sustainable food production, especially in urban areas.
+      </p>
+    </div>
+    <div class="content-image">
+      <img src="./assets/FAR1.jpeg" alt="Vertical farming example">
+    </div>
+  </div>
+
+
+  <div class="gallery">
+    <img src="./assets/FAR2.jpeg" alt="Tomatoes in vertical farming">
+    <img src="./assets/FAR3.jpeg" alt="Cucumbers in greenhouse">
+    <img src="./assets/FAR4.jpeg" alt="Strawberries vertical farm">
+     <img src="./assets/FAR5.jpeg" alt="Strawberries vertical farm">
+
+  </div>
+
+<script src="homejs.js"></script>
+  <footer>
+            © 2025 Mochi Team | All Rights Reserved
+        </footer>
+</body>
+</html>

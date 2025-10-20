@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="darkmode.css" />
+  <title>Irrigation system</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      color: #16324a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 30px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 100px;
+      color: #16324a;
+    }
+
+    /* Plant block */
+    .plant {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    .plant img {
+      width: 40%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .plant img:hover {
+      transform: scale(1.03);
+    }
+
+    .plant .content {
+      padding: 20px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .plant .content h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #16324a;
+    }
+
+    .plant .content p {
+      margin: 0;
+      font-size: 15px;
+      color: #5b6b76;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .plant {
+        flex-direction: column;
+      }
+      .plant img {
+        width: 100%;
+        height: 220px;
+      }
+      .plant .content {
+        width: 100%;
+      }
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+   <!--Navigation Bar-->
+        <nav class="navbar">
+
+            <button id="mode-toggle">🌙 Dark Mode</button>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./irregation-system.html">Irrigation systems</a></li>
+                <li><a href="./crops.html">crops</a></li>
+                <li><a href="./plants.html">plants</a></li>
+                <li><a href="./vertical.html">Vertical farming</a></li>
+                <li><a href="./plant-diseases.html">Plant diseases</a></li>
+                <li><a href="./ai.html">Ask AI</a></li>
+            </ul>
+        </nav>
+  <div class="container">
+    <header>
+      <h1>Irrigation system</h1>
+    </header>
+
+    <main>
+     
+      <div class="plant">
+        <img src="./assets/A1.jpeg" alt="Sprinkler Irrigation">
+        <div class="content">
+          <h3>Sprinkler Irrigation</h3>
+          <p> Sprinkler irrigation is a method of applying water to crops
+         in the form of artificial rainfall.
+        Water is distributed through pipes and sprayed
+         into the air through sprinklers,
+        breaking up into small droplets that fall on the plants and soil.</p>
+        </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./assets/B1.jpeg" alt="Drip Irrigation">
+      <div class="content">
+      <h3>Drip Irrigation</h3>
+      <p>Drip irrigation delivers water directly to the roots of plants
+         through small tubes or emitters.
+        It saves water, reduces weed growth, and increases
+         fertilizer efficiency, making it ideal
+        for orchards and vegetable farms.</p>
+      </div>
+      </div>
+	  
+	  
+	  
+	  <div class="plant">
+      <img src="./assets/C2.jpeg" alt="Surface Irrigation system">
+      <div class="content">
+     <h3>Surface Irrigation system</h3>
+     <p>Surface irrigation is a traditional method where water flows across the field surface by gravity.
+        It is easy to apply and low-cost, but less efficient and often leads to water loss and uneven distribution..</p>
+     </div>
+     </div>
+	  
+	  
+	  
+	  <div class="plant">
+     <img src="./assets/D1.jpeg" alt="Subsurface Irrigation">
+    <div class="content">
+    <h3>Subsurface Irrigation</h3>
+    <p>Smart irrigation uses sensors and automated controllers to adjust watering based on soil moisture
+        and weather conditions. It improves water efficiency, reduces waste, and supports sustainable farming.</p>
+    </div>
+    </div>
+	  
+    </main>
+    <br> <br> <br> <br> 
+	
+	
+  </div>
+  
+  
+  
+  
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="Expanded view">
+  </div>
+
+  <script>
+    document.querySelectorAll(".plant img").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox").style.display = "flex";
+      });
+    });
+
+    document.getElementById("lightbox").addEventListener("click", () => {
+      document.getElementById("lightbox").style.display = "none";
+    });
+  </script>
+  <script src="homejs.js"></script>
+
+    <footer>
+      © 2025 Mochi Team | All Rights Reserved
+  </footer>
+  
+</body>
+</html>

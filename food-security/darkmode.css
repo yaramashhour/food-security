@@ -1,0 +1,104 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; 
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: rgb(21, 43, 19);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+button#mode-toggle {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hamburger menu (hidden on large screens) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;             /* hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* just below navbar */
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 0;
+    gap: 10px;
+  }
+
+  .navbar ul.active {
+    display: flex; /* show when toggled */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* --- Dark Mode --- */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode #mode-toggle {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+
+footer {
+  background: rgba(98, 161, 90, 0.8);
+  color: black;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
